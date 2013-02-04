@@ -1,4 +1,4 @@
-module Rubycron
+module Crony
   module Formatters
     class YearFormatter < CronStruct
       def c

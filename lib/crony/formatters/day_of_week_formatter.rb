@@ -1,4 +1,4 @@
-module Rubycron
+module Crony
   module Formatters
     class DayOfWeekFormatter < CronStruct
       DAYS = %w{ Sunday Monday Tuesday Wednesday Thursday Friday Saturday }

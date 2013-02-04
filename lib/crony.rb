@@ -1,8 +1,8 @@
 require 'utility_functions'
-require 'rubycron/parser'
-Dir['./lib/rubycron/**/*.rb'].each {|file| require file}
+require 'crony/parser'
+Dir['./lib/crony/**/*.rb'].each {|file| require file}
 
-module Rubycron
+module Crony
   def self.parse(expression)
     return 'Invalid Format' if expression.split(/\s+/).size < 5
 

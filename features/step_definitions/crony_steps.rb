@@ -1,7 +1,7 @@
-require 'rubycron'
+require 'crony'
 
 When /^I parse the expression "(.*?)"$/ do |expression|
-  @parsed = Rubycron.parse(expression)
+  @parsed = Crony.parse(expression)
 end
 
 Then /^I return "(.*?)"$/ do |expected|

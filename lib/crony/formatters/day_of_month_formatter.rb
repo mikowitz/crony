@@ -1,4 +1,4 @@
-module Rubycron
+module Crony
   module Formatters
     class DayOfMonthFormatter < CronStruct
       def ordinal; self.single_element.ordinal; end

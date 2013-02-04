@@ -1,4 +1,4 @@
-module Rubycron
+module Crony
   class DayPresenter
     def self.parse(day, month, weekday)
       day = Formatters::DayOfMonthFormatter.new(Parser.parse(day))

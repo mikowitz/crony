@@ -1,4 +1,4 @@
-module Rubycron
+module Crony
   class YearPresenter
     def self.parse(year)
       year = Formatters::YearFormatter.new(Parser.parse(year))

@@ -1,6 +1,6 @@
 require 'ostruct'
 
-module Rubycron
+module Crony
   class CronStruct < OpenStruct
     def every?; !!every; end
     def frequency?; !!frequency; end

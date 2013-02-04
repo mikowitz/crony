@@ -1,4 +1,4 @@
-module Rubycron
+module Crony
   class Parser
     def self.parse(element)
       @element = element

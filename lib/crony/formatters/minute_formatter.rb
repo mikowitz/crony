@@ -1,4 +1,4 @@
-module Rubycron
+module Crony
   module Formatters
     class MinuteFormatter < CronStruct
       def c

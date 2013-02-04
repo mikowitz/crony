@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/../../lib')
-require 'rubycron'
+require 'crony'
 
 require 'test/unit/assertions'
 World(Test::Unit::Assertions)

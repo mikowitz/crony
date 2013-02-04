@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rubycron/version'
+require 'crony/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "rubycron"
-  gem.version       = Rubycron::VERSION
+  gem.name          = "crony"
+  gem.version       = Crony::VERSION
   gem.authors       = ["Michael Berkowitz"]
   gem.email         = ["michael.berkowitz@gmail.com"]
   gem.description   = %q{Spell-checker for cron expressions}

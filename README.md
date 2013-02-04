@@ -5,11 +5,11 @@
 * you know that getting the answer from a friend (or the internet) isn't going to help you learn how to write them for yourself
 * you'd just like to know if that cron expression you just wrote does what you meant it to
 
-Rubycron has got you covered.
+Crony's got your back.
 
-# Rubycron - it's not just a [river in Italy][rubicon]!
+# Crony
 
-It's also a 'spell-checker' for cron expressions. Ask it to parse that cron
+Crony is a 'spell-checker' for cron expressions. Ask it to parse that cron
 expression you just wrote, and it'll let you know if it's gonna do anything
 close to what you meant it to.
 
@@ -19,7 +19,7 @@ See Usage below for examples.
 
 Add this line to your application's Gemfile:
 
-    gem 'rubycron'
+    gem 'crony'
 
 And then execute:
 
@@ -27,17 +27,17 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rubycron
+    $ gem install crony
 
 ## Usage
 
-    irb > require 'rubycron'
+    irb > require 'crony'
      => true
-    irb > Rubycron.parse("3 4 22 5 * 2015")
+    irb > Crony.parse("3 4 22 5 * 2015")
      => "04:03 on May 22, 2015"
-    irb > Rubycron.parse("30 6 * * 6L *")
+    irb > Crony.parse("30 6 * * 6L *")
      => "06:30 on the last Saturday of every month"
-    irb > Rubycron.parse("10-15 6,12,18 * NOV THU#4 *")
+    irb > Crony.parse("10-15 6,12,18 * NOV THU#4 *")
     => "Every minute between 06:10 and 06:15, 12:10 and 12:15 and 18:10 and 18:15 on the 4th Thursday of November"
 
 ## Contributing
@@ -53,4 +53,3 @@ Or install it yourself as:
 Copyright (c) 2013 Michael Berkowitz (@hal678). See LICENSE.txt for further details.
 
 [cron_wiki]: http://en.wikipedia.org/wiki/Cron
-[rubicon]: http://en.wikipedia.org/wiki/Rubicon

@@ -1,4 +1,4 @@
-module Rubycron
+module Crony
   module TimePresenter
     def self.parse(minute, hour)
       minute = Formatters::MinuteFormatter.new(Parser.parse(minute))
