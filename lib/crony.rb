@@ -1,6 +1,16 @@
 require_relative 'utility_functions'
 require_relative 'crony/parser'
-Dir[File.dirname(__FILE__) + '/crony/**/*.rb'].each {|file| require_relative file}
+require_relative 'crony/formatters/cron_struct'
+require_relative 'crony/formatters/minute_formatter'
+require_relative 'crony/formatters/hour_formatter'
+require_relative 'crony/formatters/day_of_month_formatter'
+require_relative 'crony/formatters/month_formatter'
+require_relative 'crony/formatters/day_of_week_formatter'
+require_relative 'crony/formatters/year_formatter'
+require_relative 'crony/presenters/time_presenter'
+require_relative 'crony/presenters/day_presenter'
+require_relative 'crony/presenters/year_presenter'
+require_relative 'crony/version'
 
 module Crony
   def self.parse(expression)
