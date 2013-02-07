@@ -1,6 +1,6 @@
-require_relative 'utility_functions'
-require_relative 'crony/parser'
-Dir[File.dirname(__FILE__) + '/crony/**/*.rb'].each {|file| require_relative file}
+require 'utility_functions'
+require 'crony/parser'
+Dir[File.dirname(__FILE__) + '/crony/**/*.rb'].each {|file| require file}
 
 module Crony
   def self.parse(expression)
