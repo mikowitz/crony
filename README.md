@@ -13,6 +13,8 @@ Crony is a 'spell-checker' for cron expressions. Ask it to parse that cron
 expression you just wrote, and it'll let you know if it's gonna do anything
 close to what you meant it to.
 
+[![Build Status](https://travis-ci.org/mikowitz/crony.png?branch=master)](https://travis-ci.org/mikowitz/crony)
+
 See Usage below for examples.
 
 ## Installation

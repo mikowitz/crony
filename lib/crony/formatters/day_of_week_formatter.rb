@@ -35,6 +35,11 @@ module Crony
       end
 
       def r
+        if self.start =~ /[a-z]/i
+          start, stop = [self.start, self.stop].map{|s| CRON_DAYS.index(s.downcase)}
+        else
+          start, stop = [self.start, self.stop].map(&:to_i)
+        end
         c(Array(start.to_i..stop.to_i))
       end
 
