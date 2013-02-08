@@ -21,12 +21,12 @@ module Crony
           { :frequency => frequency }
         when /^\d+$/ #single number
           { :frequency => frequency, :start => start }
-        when /^\d+-\d+$/
-          range_start, range_end = *start.scan(/(\d+)-(\d+)/)[0]
+        when /^\w+-\w+$/
+          range_start, range_end = *start.scan(/(\w+)-(\w+)/)[0]
           { :frequency => frequency, :start => range_start, :stop => range_end }
         end
-      when /^\d+-\d+$/
-        range_start, range_end = *@element.scan(/(\d+)-(\d+)/)[0]
+      when /^\w+-\w+$/
+        range_start, range_end = *@element.scan(/(\w+)-(\w+)/)[0]
         { :start => range_start, :stop => range_end }
       else { :collection => parse_collection }
       end
